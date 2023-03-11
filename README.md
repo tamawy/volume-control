@@ -1,6 +1,6 @@
 ### In the name of Allah.
 # Awesome Volume Control
-This is a simple module with <a href="https://www.lua.org/" target="_blank">lua</a> language that controls volume in <a href="https://awesomewm.org/" target="_blank">Awesome</a> window manager.
+This is a very simple module with <a href="https://www.lua.org/" target="_blank">lua</a> language that controls volume in <a href="https://awesomewm.org/" target="_blank">Awesome</a> window manager.
 <br>
 I created and used this modeule on <a href="https://archlinux.org/" target="_blank">Arch Linux</a>.
 
