@@ -6,17 +6,17 @@ I created and used this modeule on <a href="https://archlinux.org/" target="_bla
 
 # Installation and Usage
 1. Clone your project inside ~/.config/awesome (i.e. in the same directory with rc.lua)
-```
+```cmd
 cd ~/.config/awesome
 git clone https://github.com/IbrahimElsayed26498/volume-control
 ```
 2. Inside rc.lua
 In the beginning of the file write:
-```
+```lua
 local volume = require("volume-control.volume")
 ```
 3. Inside (Right Widget) area call volume.getwidget
-```
+```lua
 s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
@@ -40,7 +40,7 @@ After previous steps, you have the volume value in you title bar.<br>
 4. Let's make the keys works to make the volume up, down and mute/unmute<br>
 We are still inside rc.lua<br>
 In key binding area add.
-```
+```lua
    -- Volume
    awful.key({}, "XF86AudioRaiseVolume", function() volume.up() end,
              {description = "volume up", group = "volume"}),
