@@ -54,13 +54,15 @@ function volume.getwidget()
 end
 
 function volume.up()
-	cmd("amixer set Master playback " .. STEP .. "+")
+	cmd("pactl set-sink-volume @DEFAULT_SINK@ +" .. STEP .. "%")
+	--cmd("amixer set Master playback " .. STEP .. "+")
 	updatelevel(STEP)
 	updatewidget()
 end
 
 function volume.down()
-	cmd("amixer set Master playback " .. STEP .. "-")
+	cmd("pactl set-sink-volume @DEFAULT_SINK@ +" .. STEP .."%")
+	--cmd("amixer set Master playback " .. STEP .. "-")
 	updatelevel(-STEP)
 	updatewidget()
 end
