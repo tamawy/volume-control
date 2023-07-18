@@ -51,3 +51,6 @@ In key binding area add.
 ```
 Now save the file and reload awesome window manager.<br>
 ### You can use or modify it. Thank you. :)
+
+# Updates
+1. Now it supports to control external devices.
